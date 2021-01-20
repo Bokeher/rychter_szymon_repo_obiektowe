@@ -11,9 +11,9 @@ class Zad1{
 
         String[] circle = {
             "   ***   ",
-            "  *****  ",
-            " ******* ",
-            "  *****  ",
+            "  *   *  ",
+            " *     * ",
+            "  *   *  ",
             "   ***   ",
         };
         printFigure(circle);

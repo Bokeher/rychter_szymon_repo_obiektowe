@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-class Kalkulator{
+class FiguryPlaskie{
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
         int a = 1;
@@ -22,8 +22,13 @@ class Kalkulator{
                     int perimeter;
 
                     if(chosenFigure.equals("1")){
-                        System.out.print("Podaj dlugosc boku: ");
-                        int length = sc.nextInt();
+                        int length;
+                        do{
+                            System.out.print("Podaj dlugosc boku: ");
+                            length = sc.nextInt();
+                            if(length<1) System.out.println("Podano nieprawidlowa wartosc\n");
+                        }while(length<1);
+                        
 
                         drawnFigure = drawFigure(length, length);
                         area = length*length;
@@ -37,10 +42,16 @@ class Kalkulator{
                             System.out.println(e.toString());
                         }
                     }else{
-                        System.out.print("Podaj szerokosc: ");
-                        int width = sc.nextInt();
-                        System.out.print("Podaj wysokosc: ");
-                        int height = sc.nextInt();
+                        int width;
+                        int height;
+                        do{
+                            System.out.print("Podaj szerokosc: ");
+                            width = sc.nextInt();
+                            System.out.print("Podaj wysokosc: ");
+                            height = sc.nextInt();
+                            if(width<1 || height<1) System.out.println("Podano nieprawidlowe wartosci\n");
+                        }while(width<1 || height<1);
+                        
 
                         drawnFigure = drawFigure(width, height);
                         area = height*width;

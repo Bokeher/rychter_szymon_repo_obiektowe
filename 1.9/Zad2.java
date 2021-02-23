@@ -15,11 +15,13 @@ class Zad2{
             
             Scanner sc2 = new Scanner(f2);
             String tab2[] = new String[tab.length];
+
             int i = 0;
             while(sc2.hasNext()){
                 tab2[i] = sc2.nextLine();
                 i++;
             }
+            
             for(i=0; i<tab.length; i++){
                 if(tab[i].equals("0")) System.out.print("Wczytalem liczbe 0 - nie losuje liczb");
                 else for(int j=0; j<Integer.parseInt(tab2[i]); j++) System.out.print(r.nextInt(80)+1+" ");

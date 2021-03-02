@@ -10,6 +10,12 @@ class Zad{
         arr2x2[1][0] = 3;
         arr2x2[1][1] = 4;
 
-        System.out.println(arr2x2[0][0]+"\n"+arr2x2[0][1]+"\n"+arr2x2[1][0]+"\n"+arr2x2[1][1]);
+        for(int i=0; i<2; i++){
+            for(int j=0; j<2; j++){
+                System.out.println(arr2x2[i][j]);
+            }
+        }
+        
+        //System.out.println(arr2x2[0][0]+"\n"+arr2x2[0][1]+"\n"+arr2x2[1][0]+"\n"+arr2x2[1][1]);
     }
 }

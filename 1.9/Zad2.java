@@ -27,6 +27,8 @@ class Zad2{
                 else for(int j=0; j<Integer.parseInt(tab2[i]); j++) System.out.print(r.nextInt(80)+1+" ");
                 System.out.print("\n");
             }
+
+            System.out.println("Odczytalem wszystkie liczby!");
         }catch(FileNotFoundException e){
             System.out.println(e.toString());
         }

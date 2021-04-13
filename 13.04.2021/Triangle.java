@@ -14,4 +14,16 @@ class Triangle{
     public Triangle(int a, int alfa, int beta, int gamma){
         System.out.println(0.5*(a*a)*((Math.sin(beta)*Math.sin(gamma))/Math.sin(alfa)));
     }
+
+    public Triangle(int a, int b, int c, int R){
+        System.out.println((a*b*c)/(4*R));
+    }
+
+    public Triangle(int r, int p){
+        System.out.println(r*p);
+    }
+
+    public Triangle(int R, int alfa, int beta, int gamma){
+        System.out.println((2*(R*R))*Math.sin(alfa)*Math.sin(beta)*Math.sin(gamma));
+    }
 }

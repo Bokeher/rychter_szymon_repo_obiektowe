@@ -21,12 +21,13 @@ class Main{
 
         Triangle t4 = new Triangle(2, 70, 60, 50);
 
-        Triangle t5 = new Triangle(4, 5, 6, 3);
+        // Nie mozna bo juz jest taki konstruktor
+        // Triangle t5 = new Triangle(4, 5, 6, 3);
 
-        Triangle t6 = new Triangle(3, 4);
+        // Triangle t6 = new Triangle(3, 4);
 
-        Traingle t7 = new Triangle(4, 70, 60, 50);
+        // Triangle t7 = new Triangle(4, 70, 60, 50);
 
-        Triangle t8 = new Triangle(4, 4, 5, 6);
+        // Triangle t8 = new Triangle(4, 4, 5, 6);
     }
 }

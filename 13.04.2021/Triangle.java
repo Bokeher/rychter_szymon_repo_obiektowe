@@ -26,4 +26,8 @@ class Triangle{
     public Triangle(int R, int alfa, int beta, int gamma){
         System.out.println((2*(R*R))*Math.sin(alfa)*Math.sin(beta)*Math.sin(gamma));
     }
+
+    public Triangle(int p, int a, int b, int c){
+        System.out.println(sqrt(p*(p-a)*(p-b)*(p-c)));
+    }
 }
